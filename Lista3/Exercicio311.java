@@ -8,7 +8,7 @@ package Lista3;
 +--------------------+
 */
 //public class UsaEsfera {
-public class Exercicio11 {
+public class Exercicio311 {
 	public static void main(String[] args) {
 		Esfera e1 = new Esfera(3);
 		Esfera e2 = new Esfera(10);

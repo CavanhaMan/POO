@@ -10,7 +10,7 @@ package Lista3;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Exercicio06 {
+public class Exercicio306 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
