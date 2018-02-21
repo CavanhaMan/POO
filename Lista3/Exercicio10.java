@@ -44,13 +44,10 @@ public class Exercicio10 {
 		System.out.println();
 			
 		func1.calcularSalario();
-		func2.calcularSalario();
-		func3.calcularSalario();
-
-		System.out.println();
-
 		System.out.printf("O salário do funcionário %s é R$%.2f.\n",func1.nome,func1.salario);
+		func2.calcularSalario();
 		System.out.printf("O salário do funcionário %s é R$%.2f.\n",func2.nome,func2.salario);
+		func3.calcularSalario();
 		System.out.printf("O salário do funcionário %s é R$%.2f.\n",func3.nome,func3.salario);
 
 		sc.close();

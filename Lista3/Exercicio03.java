@@ -21,34 +21,35 @@ public class Exercicio03 {
 		System.out.print("Digite o nome do paciente: ");
 		paciente.nome = sc.nextLine();
 		System.out.print("Digite o peso do paciente (kg): ");
-		paciente.peso = sc.nextDouble();
+		Paciente.peso = sc.nextDouble();
 		System.out.print("Digite a altura do paciente (m): ");
-		paciente.altura = sc.nextDouble();
+		Paciente.altura = sc.nextDouble();
 		
-		Double imc = paciente.peso/(paciente.altura*paciente.altura);
-		diagnostico(imc);
+		//Double imc = paciente.peso/(paciente.altura*paciente.altura);
+		Paciente.calcularIMC();
+		diagnostico();
 		//diagnostico(paciente.imc);
 		
 		sc.close();
 	}
 
-	private static void diagnostico(Double indice) {
-		if (indice < 16)
-			System.out.printf("IMC = %.2f, indicando magreza grave.",indice);
-		if (indice >= 16 && indice < 17)
-			System.out.printf("IMC = %.2f, indicando magreza moderada.",indice);
-		if (indice >= 17 && indice < 18.5)
-			System.out.printf("IMC = %.2f, indicando magreza leve.",indice);
-		if (indice >= 18.5 && indice < 25)
-			System.out.printf("IMC = %.2f, indicando saudável.",indice);
-		if (indice >= 25 && indice < 30)
-			System.out.printf("IMC = %.2f, indicando sobrepeso.",indice);
-		if (indice >= 30 && indice < 35)
-			System.out.printf("IMC = %.2f, indicando obesidade grau I.",indice);
-		if (indice >= 35 && indice < 40)
-			System.out.printf("IMC = %.2f, indicando obesidade grau II (Severa).",indice);
-		if (indice >= 40)
-			System.out.printf("IMC = %.2f, indicando obesidade grau III (Mórbida).",indice);
+	private static void diagnostico() {
+		if (Paciente.imc < 16)
+			System.out.printf("IMC = %.2f, indicando magreza grave.",Paciente.imc);
+		if (Paciente.imc >= 16 && Paciente.imc < 17)
+			System.out.printf("IMC = %.2f, indicando magreza moderada.",Paciente.imc);
+		if (Paciente.imc >= 17 && Paciente.imc < 18.5)
+			System.out.printf("IMC = %.2f, indicando magreza leve.",Paciente.imc);
+		if (Paciente.imc >= 18.5 && Paciente.imc < 25)
+			System.out.printf("IMC = %.2f, indicando saudável.",Paciente.imc);
+		if (Paciente.imc >= 25 && Paciente.imc < 30)
+			System.out.printf("IMC = %.2f, indicando sobrepeso.",Paciente.imc);
+		if (Paciente.imc >= 30 && Paciente.imc < 35)
+			System.out.printf("IMC = %.2f, indicando obesidade grau I.",Paciente.imc);
+		if (Paciente.imc >= 35 && Paciente.imc < 40)
+			System.out.printf("IMC = %.2f, indicando obesidade grau II (Severa).",Paciente.imc);
+		if (Paciente.imc >= 40)
+			System.out.printf("IMC = %.2f, indicando obesidade grau III (Mórbida).",Paciente.imc);
 		
 	}
 		

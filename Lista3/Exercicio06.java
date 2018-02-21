@@ -21,12 +21,12 @@ public class Exercicio06 {
 		System.out.print("Digite o nome do paciente: ");
 		paciente.nome = sc.nextLine();
 		System.out.print("Digite o peso do paciente (kg): ");
-		paciente.peso = sc.nextDouble();
+		Paciente.peso = sc.nextDouble();
 		System.out.print("Digite a altura do paciente (m): ");
-		paciente.altura = sc.nextDouble();
+		Paciente.altura = sc.nextDouble();
 		
-		paciente.calcularIMC();
-		diagnostico(paciente.imc);
+		Paciente.calcularIMC();
+		diagnostico(Paciente.imc);
 		//diagnostico(paciente.imc);
 		
 		sc.close();

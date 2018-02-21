@@ -24,6 +24,10 @@ public class Exercicio02 {
 		System.out.print("Digite o valor da hora: ");
 		pessoa.vlrhora = sc.nextDouble();
 		
+		pessoa.calcularSalario();
+		System.out.printf("O funcionário %s receberá um salário de R$%.2f.\n",pessoa.nome,pessoa.salario);
+		
+		/*
 		String[] horas = new String[2];
 		horas = pessoa.horastrab.split(":");
 		int h = Integer.parseInt(horas[0]);
@@ -32,7 +36,7 @@ public class Exercicio02 {
 		Double salario = tempo * pessoa.vlrhora / 60;
 		
 		System.out.printf("O funcionário %s trabalhou %s horas e %s minutos a R$%.2f a hora, totalizando um salário de R$%.2f.\n",pessoa.nome,h,m,pessoa.vlrhora,salario);
-		
+		*/
 		sc.close();
 	}
 }
