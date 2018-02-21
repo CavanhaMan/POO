@@ -1,3 +1,15 @@
+package Lista3;
+/*
++------------------------------------+
+----------Rodrigo CavanhaMan----------
+Classe usada nos seguintes programas:
++------------------------------------+
+Exercicio02
+Exercicio10
+Exercicio09
+Exercicio05
++------------------------------------+
+*/
 public class Funcionario {
 	String nome;
 	String horastrab;

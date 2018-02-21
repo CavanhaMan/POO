@@ -1,3 +1,16 @@
+package Lista3;
+/*
++------------------------------------+
+----------Rodrigo CavanhaMan----------
+Classe usada nos seguintes programas:
++------------------------------------+
+Exercicio01
+Exercicio12
+Exercicio08
+Exercicio07
+Exercicio04
++------------------------------------+
+*/
 public class Circulo {
 	double raio;
 	double area;
