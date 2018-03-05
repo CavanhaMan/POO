@@ -8,16 +8,28 @@ public class Conta {
     private static String agencia;
     private double saldo;
     private double limite; // adicionando um limite a conta
+    private double salario;
     private static String dataabertura;
 
 	public String getTitular() { return this.titular; }
 	public void setTitular(String titular) { this.titular = titular; }
-    public double getSaldo() { return this.saldo + this.limite; }
+
+	public double getSaldo() { return this.saldo + this.limite; }
     public void setSaldo(double saldo) { this.saldo = saldo; }
     
-   /* 2. Crie apenas os getters e setters necessários da sua classe Conta.
-    * Pense sempre se é preciso criar cada um deles.
-    */ 
+    public int getNumero() { return this.numero; }
+    public void setNumero(int numero) {}
+    
+    public String getAgencia() {return this.agencia; }
+    public void setAgencia(String agencia) {}
+    
+    public Double getLimite() {return this.limite; }
+    public void setLimite(Double salario) {}
+    
+    public Double getSalario() {return this.salario; }
+    public void setSalario(Double salario) {}
+    
+    
     // construtor
     Conta (String titular) { this.titular = titular; }
 
@@ -26,14 +38,10 @@ public class Conta {
         Conta.id = id;
     }
 
-    /* Adicione um atributo na classe  Conta de tipo int que se chama identificador.
-     * Esse identificador deve ter um valor único para  cada instância  do  tipo Conta. 
-     * Crie um getter para o identificador. Devemos ter um setter?
-     * R: Não, porque o identificador é calculado nos contrutores.
-     */
  	public static int getId() { return Conta.id; }
-
-    public void OpSaca (double valor) {}
+ 	// não precisa do método setter porque o id será gerado nos contrutores.
+   
+ 	public void OpSaca (double valor) {}
     public void OpDeposita (double valor) {}
     public void OpRendimento() {}
     
