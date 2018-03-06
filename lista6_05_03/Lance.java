@@ -11,4 +11,6 @@ public class Lance {
 	public Double getLance() { return this.lance; } 
 	public void setLance(Double lance) { this.lance = lance; }
 
+	
+	
 }

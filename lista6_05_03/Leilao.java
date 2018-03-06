@@ -7,6 +7,7 @@ public class Leilao {
 	private Double vrinicial;
 	private Double vrminimo;
 	private Boolean status;
+	private Double lanceatual;
 	
 	Leilao (String nome, Double vrinicial, Double vrminimo) {
 		super();
@@ -24,7 +25,10 @@ public class Leilao {
 	public Double getVrMinimo() { return this.vrminimo; } 
 	public void setVrMinimo(Double vrminimo) { this.vrminimo = vrminimo; }
 	
-	public void registrarLance(String Nome, Double Valor) {
+	public void registrarLance(String Nome, Double lance) {
+		if (lance <= this.vrinicial || lance <= this.vrminimo || lance <= lanceatual) {
+			
+		}
 		//se o leilão estiver aberto e se valor for maior que o lance que está vencendo o leilão,
 		//cria um objeto Lance e atribui ao atributo que mantém o lance vencedor.
 	}
