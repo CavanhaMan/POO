@@ -12,4 +12,11 @@ public class Amigo extends Pessoa{
 		diaDoAniversario = dia;
 	}
 	
+
+	public String getDiaDoAniversario() { return this.diaDoAniversario; } 
+	public void setDiaDoAniversario(String diaDoAniversario) { this.diaDoAniversario = diaDoAniversario; }
+
+	
+	
+	
 }
