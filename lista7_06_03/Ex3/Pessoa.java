@@ -10,9 +10,7 @@ public class Pessoa {
 		this.sobrenome = sobrenome;
 	}
 	
-	public Pessoa () {
-		super();
-	}
+	public Pessoa () { super(); }
 
 	public String getNome() { return this.nome; } 
 	public void setNome(String nome) { this.nome = nome; }

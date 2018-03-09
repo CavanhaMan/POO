@@ -12,9 +12,7 @@ public class Pessoa {
 		this.idade = idade;
 	}
 	
-	public Pessoa () {
-		super();
-	}
+	public Pessoa () { super(); }
 	
 	public String getNome() { return this.nome; } 
 	public void setNome(String nome) { this.nome = nome; }
