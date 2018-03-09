@@ -8,13 +8,13 @@ public class Programa {
 		Professor pessoa3 = new Professor ("Antônio", "Silva", 200, 1500.00);
 		
 		System.out.println("Pessoa 1: " + pessoa1.getNomeCompleto());
-		System.out.println("Pessoa 2: " + pessoa2.getNomeCompleto());
-		System.out.println("Pessoa 3: " + pessoa3.getNomeCompleto());
+		System.out.println("Pessoa 2 (Funcionário): " + pessoa2.getNomeCompleto());
+		System.out.println("Pessoa 3 (Professor): " + pessoa3.getNomeCompleto());
 		System.out.println("");
-		System.out.println("Primeira parcela do salário da Pessoa 2: R$" + pessoa2.getSalarioPrimeiraParcela());
-		System.out.println("Segunda parcela do salário da Pessoa 2: R$" + pessoa2.getSalarioSegundaParcela());
-		System.out.println("Primeira parcela do salário da Pessoa 3: R$" + pessoa3.getSalarioPrimeiraParcela());
-		System.out.println("Segunda parcela do salário da Pessoa 3: R$" + pessoa3.getSalarioSegundaParcela());
+		System.out.printf("Primeira parcela do salário da Pessoa 2 (funcionário): R$%.2f\n",pessoa2.getSalarioPrimeiraParcela());
+		System.out.printf("Segunda parcela do salário da Pessoa 2 (funcionário): R$%.2f\n",pessoa2.getSalarioSegundaParcela());
+		System.out.printf("Primeira parcela do salário da Pessoa 3 (professor): R$%.2f\n",pessoa3.getSalarioPrimeiraParcela());
+		System.out.printf("Segunda parcela do salário da Pessoa 3 (professor): R$%.2f\n",pessoa3.getSalarioSegundaParcela());
 
 	}
 
