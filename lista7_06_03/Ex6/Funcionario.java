@@ -6,6 +6,10 @@ public abstract class Funcionario {
 	
 	public abstract double calculaSalario();
 	
+	public Funcionario() {
+		super();
+	}
+	
 	public Funcionario(String nome, String matricula, double salario_base) {
 		super();
 		this.nome = nome;

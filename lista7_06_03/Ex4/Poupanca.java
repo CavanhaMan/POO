@@ -17,6 +17,14 @@ public class Poupanca extends Conta {
 	
 	//O atributo saldo da classe Poupanca não pode ser negativo.
 	
-
+	void setSaldo(double valor) {
+		//Atribui ao atributo saldo o valor recebido como parâmetro
+		//desde que este valor não seja negativo. Caso seja negativo, não faz nada.
+	}
+	
+	void sacar(double valor) {
+		//Subtrair o valor recebido como parâmetro do atributo saldo 
+		//desde que este valor não seja negativo. Caso seja negativo, não faz nada.
+	}
 	
 }

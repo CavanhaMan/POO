@@ -14,7 +14,7 @@ public class Conta {
 	}
 	
 	public double getSaldo() { return saldo; }
-	public void setSaldo(double saldo) { this.saldo = saldo; }
+	//public void setSaldo(double saldo) { this.saldo = saldo; }
 
 	void depositar(double valor) {
 		//Acrescentar o valor recebido como parâmetro ao atributo saldo
