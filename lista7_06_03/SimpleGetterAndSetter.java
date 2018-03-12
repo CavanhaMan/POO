@@ -1,5 +1,6 @@
 package lista7_06_03;
 
+
 public class SimpleGetterAndSetter {
     private int number;
  
