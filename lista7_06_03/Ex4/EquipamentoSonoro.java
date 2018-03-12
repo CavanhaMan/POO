@@ -6,25 +6,29 @@ public class EquipamentoSonoro extends Equipamento {
 
 	public EquipamentoSonoro() { super(); }
 	public EquipamentoSonoro(boolean ligado) { super(ligado); }
+
 	public int getVolume() { return volume; }
 	public void setVolume(int volume) { this.volume = volume; }
+	
 	public boolean isStereo() { return stereo; }
 	public void setStereo(boolean stereo) { this.stereo = stereo; }
-	public EquipamentoSonoro(int volume, boolean stereo) {
-		super();
+
+	public EquipamentoSonoro(boolean ligado, int volume, boolean stereo) {
+		super(ligado);
 		this.volume = volume;
 		this.stereo = stereo;
 	}
 	
 	void mono() {
-		//Torna o atributo stereo falso
+		this.stereo = false;
 	}
 	void stereo() {
-		//Torna o atributo stereo verdadeiro
+		this.stereo = true;
 	}
+	@Override
 	void liga() {
-		//Efeito Sobrescreve o método liga da superclasse.
-		//Este método deve chamar o método liga da superclasse e ajustar o atributo volume para 5
+		super.setLigado(true);
+		this.volume = 5;
 	}
 	
 }

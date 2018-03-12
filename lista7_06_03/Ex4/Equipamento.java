@@ -14,9 +14,9 @@ public class Equipamento {
 	public void setLigado(boolean ligado) { this.ligado = ligado; }
 	
 	void liga() {
-		this.ligado=true;
+		this.ligado = true;
 	}
 	void desliga() {
-		this.ligado=false;
+		this.ligado = false;
 	}
 }
