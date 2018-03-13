@@ -1,6 +1,6 @@
 package lista7_06_03.Ex7;
 
-public class Retangulo {
+public class Retangulo implements FormaGeometrica {
 	private double base;
 	private double altura;
 	
@@ -17,10 +17,10 @@ public class Retangulo {
 	public double getAltura() { return altura; }
 	public void setAltura(double altura) { this.altura = altura; }
 
-	double calcularPerimetro() {
+	public double calcularPerimetro() {
 		return (2*base) + (2*altura);
 	}
-	double calcularArea() {
+	public double calcularArea() {
 		return (base*altura);
 	}
 

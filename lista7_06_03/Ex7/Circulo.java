@@ -1,8 +1,7 @@
 package lista7_06_03.Ex7;
 
-public class Circulo {
+public class Circulo  implements FormaGeometrica {
 	private double raio;
-	double pi = 3.14;
 	
 	public Circulo() { super(); }
 	public Circulo(double raio) {
@@ -13,11 +12,11 @@ public class Circulo {
 	public double getRaio() { return raio; }
 	public void setRaio(double raio) { this.raio = raio; }
 	
-	double calcularPerimetro() {
-		return 2 * pi * raio;
+	public double calcularPerimetro() {
+		return 2 * Math.PI * raio;
 	}
-	double calcularArea() {
-		return pi * raio * raio;
+	public double calcularArea() {
+		return Math.PI * raio * raio;
 	}
 
 }
