@@ -1,4 +1,4 @@
-package solid.exercicios.srp.violation;
+package solid.exercicios.srp.correction;
 
 public class Veiculo {
 

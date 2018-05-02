@@ -1,4 +1,4 @@
-package solid.exercicios.dip.violation;
+package solid.exercicios.dip.correction;
 
 public class CarroDeCorrida {
 

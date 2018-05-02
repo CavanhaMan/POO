@@ -1,4 +1,4 @@
-package solid.exercicios.isp.violation;
+package solid.exercicios.isp.correction;
 
 public abstract class Veiculo implements ligaDesliga {
 

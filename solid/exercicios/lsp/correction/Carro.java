@@ -1,4 +1,4 @@
-package solid.exercicios.lsp.violation;
+package solid.exercicios.lsp.correction;
 
 public class Carro extends Veiculo {
 

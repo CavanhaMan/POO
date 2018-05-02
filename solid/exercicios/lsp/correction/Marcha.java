@@ -1,4 +1,4 @@
-package solid.exercicios.lsp.violation;
+package solid.exercicios.lsp.correction;
 
 public enum Marcha {
     P, // Parking
