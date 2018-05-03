@@ -3,7 +3,7 @@ package strategy.Ex1;
 public class Cliente {
 	public static void main(String args[]) {
 
-		// Populacao
+		// População
 		int[] zipCodes = new int[] { 66209, 64113, 10162, 90210, 61701, 55901, 48823, 62901, 50014 };
 		
 		Amostrador amostrador = new Amostrador(zipCodes);

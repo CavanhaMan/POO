@@ -16,8 +16,8 @@ public class Amostrador {
 			int[] subConjunto = new int[tamanhoAmostra];
 			Random generator = new Random();
 			
-			// faz uma c√≥pia usando ArrayList
-			// fica f√°cil amostrar sem repetir
+			// faz uma cÛpia usando ArrayList
+			// fica f·cil amostrar sem repetir
 			ArrayList<Integer> tempArray = new ArrayList<Integer>();
 			for (int i = 0; i < populacao.length; i++)
 				tempArray.add(populacao[i]);
@@ -31,8 +31,8 @@ public class Amostrador {
 			int[] subConjunto = new int[tamanhoAmostra];
 			Random generator = new Random();
 
-			// faz c√≥pia da popula√ß√£o.
-			// n√£o queremos causar efeitos colaterais.
+			// faz copia da populaÁ„o.
+			// n„o queremos causar efeitos colaterais.
 			int[] populacaoOrdenada = new int[populacao.length];
 			System.arraycopy(populacao, 0, populacaoOrdenada, 0, populacao.length);
 			Arrays.sort(populacaoOrdenada);
