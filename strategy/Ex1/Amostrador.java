@@ -11,7 +11,8 @@ public class Amostrador {
 		populacao = codigosZip;
 	}
 
-	public int[] selecionaSubconjunto(int tamanhoAmostra, String metodo) {
+	public int[] selecionaSubconjunto(int tamanhoAmostra, String metodo, int[] populacao) {
+		/*
 		if (metodo.equals("randomico")) {
 			int[] subConjunto = new int[tamanhoAmostra];
 			Random generator = new Random();
@@ -45,7 +46,7 @@ public class Amostrador {
 				subConjunto[i] = populacaoOrdenada[startingPoint + (i * step)];
 
 			return subConjunto;
-		}
+		}*/
 		return null;
 	}
 
