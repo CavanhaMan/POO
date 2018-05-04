@@ -2,13 +2,13 @@ package solid.exercicios.dip.correction;
 
 public class Piloto {
 
-    private CarroDeCorrida veiculo;
+    private Veiculo carro;
 
     public Piloto(){
-        this.veiculo = new CarroDeCorrida(100);
+        this.carro = new CarroDeCorrida(100);
     }
 
     public void aumentaVelocidade(){
-        veiculo.acelerar();
+        carro.acelerar();
     }
 }

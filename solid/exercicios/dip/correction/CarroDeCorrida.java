@@ -1,6 +1,6 @@
 package solid.exercicios.dip.correction;
 
-public class CarroDeCorrida {
+public class CarroDeCorrida implements Veiculo {
 
     private final int capacidadeTanqueCombustivel;
     private int quantidadeCombustivel;
