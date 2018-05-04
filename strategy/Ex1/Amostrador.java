@@ -11,7 +11,7 @@ public class Amostrador {
 		populacao = codigosZip;
 	}
 
-	public int[] selecionaSubconjunto(int tamanhoAmostra, String metodo, int[] populacao) {
+	public int[] selecionaSubconjunto(int tamanhoAmostra, int[] populacao) {
 		/*
 		if (metodo.equals("randomico")) {
 			int[] subConjunto = new int[tamanhoAmostra];

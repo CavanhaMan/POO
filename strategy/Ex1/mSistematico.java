@@ -10,7 +10,7 @@ public class mSistematico extends Amostrador {
 	}
 
 	@Override
-	public int[] selecionaSubconjunto(int tamanhoAmostra, String metodo, int[] populacao){
+	public int[] selecionaSubconjunto(int tamanhoAmostra, int[] populacao){
 	
 		int[] subConjunto = new int[tamanhoAmostra];
 		Random generator = new Random();
