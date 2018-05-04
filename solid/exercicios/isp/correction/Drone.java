@@ -1,30 +1,14 @@
 package solid.exercicios.isp.correction;
 
-public class Drone extends Veiculo {
+public class Drone extends Veiculo implements Camera {
 
     private boolean cameraOn;
 
-    public boolean isCameraOn() {
-        return cameraOn;
-    }
+    public boolean isCameraOn() {return cameraOn;}
 
 	@Override
-	public void ligarRadio() {
-		// nada pra fazer aqui
-	}
+	public void ligarCamera() {cameraOn = true;}
 
 	@Override
-	public void desligarRadio() {
-		// nada pra fazer aqui
-	}
-
-	@Override
-	public void ligarCamera() {
-		cameraOn = true;
-	}
-
-	@Override
-	public void desligarCamera() {
-		cameraOn = false;
-	}
+	public void desligarCamera() {cameraOn = false;}
 }

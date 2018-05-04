@@ -1,30 +1,15 @@
 package solid.exercicios.isp.correction;
 
-public class Carro extends Veiculo {
+public class Carro extends Veiculo implements Radio {
 
     private boolean radioOn;
 
-    public boolean isRadioOn() {
-        return radioOn;
-    }
+    public boolean isRadioOn() {return radioOn;}
 
 	@Override
-	public void ligarRadio() {
-		radioOn = true;
-	}
+	public void ligarRadio() {radioOn = true;}
 
 	@Override
-	public void desligarRadio() {
-        radioOn = false;
-	}
+	public void desligarRadio() {radioOn = false;}
 
-	@Override
-	public void ligarCamera() {
-		//nada pra fazer aqui
-	}
-
-	@Override
-	public void desligarCamera() {
-		// nada pra fazer aqui
-	}
 }

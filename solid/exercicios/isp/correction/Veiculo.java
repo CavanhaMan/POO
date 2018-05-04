@@ -1,21 +1,15 @@
 package solid.exercicios.isp.correction;
 
-public abstract class Veiculo implements ligaDesliga {
+public abstract class Veiculo implements Motor {
 
     private boolean motorLigado;
 
-    public boolean isMotorRodando() {
-		return motorLigado;
-	}
+    public boolean isMotorRodando() {return motorLigado;}
 
     @Override
-    public void ligar() {
-        motorLigado = true;
-    }
+    public void ligar() {motorLigado = true;}
 
     @Override
-    public void desligar() {
-        motorLigado = false;
-    }
+    public void desligar() {motorLigado = false;}
 
 }
