@@ -10,11 +10,11 @@ public class Veiculo {
         quantidadeCombustivel = capacidadeTanque;
     }
 
-    // isto Ã© responsabilidade do veiculo?
-    public void reabastecimento(){
+    // isto não responsabilidade do veiculo?
+/*    public void reabastecimento(){
         quantidadeCombustivel = capacidadeTanqueCombustivel;
     }
-
+*/
     public int getQuantidadeCombustivel() {
 		return quantidadeCombustivel;
 	}
