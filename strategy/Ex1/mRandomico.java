@@ -3,18 +3,12 @@ package strategy.Ex1;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class mRandomico extends Amostrador {
-
-	public mRandomico(int[] codigosZip) {
-		super(codigosZip);
-	}
+public class mRandomico implements MetodosDeAmostragem {
 
 	@Override
-	public int[] selecionaSubconjunto(int tamanhoAmostra, int[] populacao){
-	
+	public int[] amostra(int tamanhoAmostra, int[] populacao) {
 		int[] subConjunto = new int[tamanhoAmostra];
 		Random generator = new Random();
-		
 		// faz uma cópia usando ArrayList
 		// fica fácil amostrar sem repetir
 		ArrayList<Integer> tempArray = new ArrayList<Integer>();
@@ -23,7 +17,7 @@ public class mRandomico extends Amostrador {
 		
 		for (int i = 0; i < tamanhoAmostra; i++)
 			subConjunto[i] = tempArray.remove(generator.nextInt(tempArray.size()));
-	
+
 		return subConjunto;
 	}
 }

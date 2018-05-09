@@ -3,19 +3,13 @@ package strategy.Ex1;
 import java.util.Arrays;
 import java.util.Random;
 
-public class mSistematico extends Amostrador {
-	
-	public mSistematico(int[] codigosZip) {
-		super(codigosZip);
-	}
+public class mSistematico implements MetodosDeAmostragem {
 
 	@Override
-	public int[] selecionaSubconjunto(int tamanhoAmostra, int[] populacao){
-	
+	public int[] amostra(int tamanhoAmostra, int[] populacao) {
 		int[] subConjunto = new int[tamanhoAmostra];
 		Random generator = new Random();
-	
-		// faz cópia da populaÃ§Ã£o.
+		// faz copia da população.
 		// não queremos causar efeitos colaterais.
 		int[] populacaoOrdenada = new int[populacao.length];
 		System.arraycopy(populacao, 0, populacaoOrdenada, 0, populacao.length);
@@ -27,7 +21,7 @@ public class mSistematico extends Amostrador {
 		// seleciona elementos em intervalo regular â€˜stepâ€™
 		for (int i = 0; i < tamanhoAmostra; i++)
 			subConjunto[i] = populacaoOrdenada[startingPoint + (i * step)];
-	
+
 		return subConjunto;
 	}
 }
