@@ -1,14 +1,9 @@
 package strategy.Ex2;
-import java.util.Scanner;
 
-public class Mensagem {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.printf("Digie o dia da semana: ");
-		String diasemana = sc.nextLine();
-		
+public class Msg {
+	private String diasemana;
+	
+	void imprimeM(String diasemana){
 		switch (diasemana){
 		case "segunda":
 			System.out.println("É.. o jeito é matar logo essa segunda...");
@@ -33,11 +28,11 @@ public class Mensagem {
 			System.out.println("Mas amanhã já é segunda..  :´-(");
 			break;
 		}
-
-
-		
-		sc.close();
-
 	}
 
+	public static void Main(String[] args){
+		Msg print = new Msg();
+		print.imprimeM("terca");
+
+	}
 }

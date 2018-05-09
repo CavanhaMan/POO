@@ -8,7 +8,7 @@ public class MensagemDia {
 		this.diadasemana = diadasemana;
 	}
 	
-	public static void maind(String[] args) {
+	public static void main(String[] args) {
 		MensagemDia print2 = new MensagemDia(new diaSegunda());
 		MensagemDia print3 = new MensagemDia(new diaTerca());
 		MensagemDia print4 = new MensagemDia(new diaQuarta());
