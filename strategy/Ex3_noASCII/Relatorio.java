@@ -1,0 +1,20 @@
+/*
+Relatórios simples: 
+-- CABEÇALHO: nome do banco
+-- CORPO: titular e saldo da conta
+-- RODAPÉ: telefone
+Relatórios complexos:
+-- CABEÇALHO: nome do banco, endereço, telefone
+-- CORPO: titular, agência, número da conta e saldo
+-- RODAPÉ: e-mail, e a data atual.
+CavanhaMan
+Use dados falsos para os dados do banco.
+ */
+package strategy.Ex3_noASCII;
+
+public abstract class Relatorio {
+	public void gerarRelatorio(){
+		imprimeRelatorio();
+	}
+	public abstract void imprimeRelatorio();
+}
