@@ -11,18 +11,17 @@ Relatórios complexos:
 
 Use dados falsos para os dados do banco.
  */
-import java.util.Locale;
 
 public class DadosBancarios {
 	public static String titular;	//corpo 1 e 2
-	public static String endereco;//cabeça 2
-	public static String email;	//rodape 2
-	public static String banco;	//cabeçalho 1 e 2
+	public static String endereco;	//cabeça 2
+	public static String email;		//rodape 2
+	public static String banco;		//cabeçalho 1 e 2
 	public static String agencia;	//corpo 2
-	public static String conta;	//corpo 2
-	public static Double saldo;	//corpo 1 e 2
-	public static String fone;	//rodape 1 e 2
-	public static String data;	//rodape 2
+	public static String conta;		//corpo 2
+	public static Double saldo;		//corpo 1 e 2
+	public static String fone;		//rodape 1 e 2
+	public static String data;		//rodape 2
 
 	
 }

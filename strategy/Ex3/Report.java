@@ -17,7 +17,6 @@ public class Report {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		
 		DadosBancarios.titular = "CavanhaMan";
 		DadosBancarios.endereco = "Rua Atilio Valentini, 1";
 		DadosBancarios.email = "cavanhaman@hotmail.com";
@@ -29,42 +28,54 @@ public class Report {
 		DadosBancarios.data = "09/05/2018";
 		
 		
+		reportMenu();
+		int escolha = sc.nextInt();
+		
+		if (escolha==1) {
+			reportSimples();
+		}
+		/*-- RODAPÉ: e-mail, e a data atual.  */
+		if (escolha==2) {
+			reportComplexo();
+		}
+
+		sc.close();
+	}
+
+	private static void reportMenu() {
 		System.out.format("╔════════════════════════════════════════╗%n");
-		System.out.printf("║Qual relatório você deseja?             ║\n");
+		System.out.printf("║Que relatório você deseja?              ║\n");
 		System.out.format("╠════════════════════════════════════════╣%n");
 		System.out.printf("║1 - Relatório Simples                   ║\n");
 		System.out.printf("║2 - Relatório Completo                  ║\n");
 		System.out.format("╚════════════════════════════════════════╝%n");
-		int escolha = sc.nextInt();
-		
-		if (escolha==1) {
-			System.out.format("╔════════════════════════════════════════╗%n");
-			System.out.printf("║Banco: %33s║\n",DadosBancarios.banco);
-			System.out.format("╠════════════════════════════════════════╣%n");
-			System.out.printf("║Titular: %31s║\n",DadosBancarios.titular);
-			System.out.printf("║Saldo: %33s║\n",DadosBancarios.saldo);
-			System.out.format("╠════════════════════════════════════════╣%n");
-			System.out.printf("║Telefone: %30s║\n",DadosBancarios.fone);
-			System.out.format("╚════════════════════════════════════════╝%n");
-		}
-		/*-- RODAPÉ: e-mail, e a data atual.  */
-		if (escolha==2) {
-			System.out.format("╔════════════════════════════════════════╗%n");
-			System.out.printf("║Banco: %33s║\n",DadosBancarios.banco);
-			System.out.printf("║Endereço: %30s║\n",DadosBancarios.endereco);
-			System.out.printf("║Telefone: %30s║\n",DadosBancarios.fone);
-			System.out.format("╠════════════════════════════════════════╣%n");
-			System.out.printf("║Titular: %31s║\n",DadosBancarios.titular);
-			System.out.printf("║Agencia: %31s║\n",DadosBancarios.agencia);
-			System.out.printf("║Conta: %33s║\n",DadosBancarios.conta);
-			System.out.printf("║Saldo: %33s║\n",DadosBancarios.saldo);
-			System.out.format("╠════════════════════════════════════════╣%n");
-			System.out.printf("║E-mail: %32s║\n",DadosBancarios.email);
-			System.out.printf("║Data: %34s║\n",DadosBancarios.data);
-			System.out.format("╚════════════════════════════════════════╝%n");
-		}
+	}
 
-		sc.close();
+	private static void reportComplexo() {
+		System.out.format("╔════════════════════════════════════════╗%n");
+		System.out.printf("║Banco: %33s║\n",DadosBancarios.banco);
+		System.out.printf("║Endereço: %30s║\n",DadosBancarios.endereco);
+		System.out.printf("║Telefone: %30s║\n",DadosBancarios.fone);
+		System.out.format("╠════════════════════════════════════════╣%n");
+		System.out.printf("║Titular: %31s║\n",DadosBancarios.titular);
+		System.out.printf("║Agencia: %31s║\n",DadosBancarios.agencia);
+		System.out.printf("║Conta: %33s║\n",DadosBancarios.conta);
+		System.out.printf("║Saldo: %33s║\n",DadosBancarios.saldo);
+		System.out.format("╠════════════════════════════════════════╣%n");
+		System.out.printf("║E-mail: %32s║\n",DadosBancarios.email);
+		System.out.printf("║Data: %34s║\n",DadosBancarios.data);
+		System.out.format("╚════════════════════════════════════════╝%n");
+	}
+
+	private static void reportSimples() {
+		System.out.format("╔════════════════════════════════════════╗%n");
+		System.out.printf("║Banco: %33s║\n",DadosBancarios.banco);
+		System.out.format("╠════════════════════════════════════════╣%n");
+		System.out.printf("║Titular: %31s║\n",DadosBancarios.titular);
+		System.out.printf("║Saldo: %33s║\n",DadosBancarios.saldo);
+		System.out.format("╠════════════════════════════════════════╣%n");
+		System.out.printf("║Telefone: %30s║\n",DadosBancarios.fone);
+		System.out.format("╚════════════════════════════════════════╝%n");
 	}
 
 }

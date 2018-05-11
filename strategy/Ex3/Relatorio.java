@@ -1,18 +1,22 @@
 /*
-Relatórios simples: 
--- CABEÇALHO: nome do banco
+RelatÃ³rios simples: 
+-- CABEÃ‡ALHO: nome do banco
 -- CORPO: titular e saldo da conta
--- RODAPÉ: telefone
-Relatórios complexos:
--- CABEÇALHO: nome do banco, endereço, telefone
--- CORPO: titular, agência, número da conta e saldo
--- RODAPÉ: e-mail, e a data atual.
+-- RODAPÃ‰: telefone
+RelatÃ³rios complexos:
+-- CABEÃ‡ALHO: nome do banco, endereÃ§o, telefone
+-- CORPO: titular, agÃªncia, nÃºmero da conta e saldo
+-- RODAPÃ‰: e-mail, e a data atual.
 
 Use dados falsos para os dados do banco.
  */
-
 package strategy.Ex3;
 
-public class Relatorio {
+import java.util.Scanner;
 
+public abstract class Relatorio {
+	public void gerarRelatorio(){
+		imprimeRelatorio();
+	}
+	public abstract void imprimeRelatorio();
 }
