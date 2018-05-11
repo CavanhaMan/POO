@@ -1,5 +1,7 @@
 package strategy.Ex3;
 /*
+DadosBancários
+CavanhaMan
 Relatórios simples: 
 -- CABEÇALHO: nome do banco
 -- CORPO: titular e saldo da conta
@@ -12,16 +14,16 @@ Relatórios complexos:
 Use dados falsos para os dados do banco.
  */
 
-public class DadosBancarios {
-	public static String titular;	//corpo 1 e 2
-	public static String endereco;	//cabeça 2
-	public static String email;		//rodape 2
-	public static String banco;		//cabeçalho 1 e 2
-	public static String agencia;	//corpo 2
-	public static String conta;		//corpo 2
-	public static Double saldo;		//corpo 1 e 2
-	public static String fone;		//rodape 1 e 2
-	public static String data;		//rodape 2
+import java.util.Scanner;
 
-	
+public class DadosBancarios {
+	public static String titular = "CavanhaMan";				//corpo 1 e 2
+	public static String endereco = "Rua Atilio Valentini, 1";	//cabeça 2
+	public static String email = "cavanhaman@hotmail.com";		//rodape 2
+	public static String banco = "Itau";						//cabeçalho 1 e 2
+	public static String agencia = "123";						//corpo 2
+	public static String conta = "123456-7";					//corpo 2
+	public static Double saldo = 15614.38;						//corpo 1 e 2
+	public static String fone = "34-99123-4567";				//rodape 1 e 2
+	public static String data = "09/05/2018";					//rodape 2
 }
