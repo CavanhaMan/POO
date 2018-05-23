@@ -18,19 +18,19 @@ public class PortaAntesDeRefatorar {
 		
 		void clicar(){
 			switch (estado) {
+			case "Porta Abrindo":
+				setEstado("Porta Permanentemente Aberta");
+				break;
 			case "Porta Aberta":
 				setEstado("Porta Permanentemente Aberta");
 				break;
 			case "Porta Permanentemente Aberta":
 				setEstado("Porta Permanentemente Aberta");
 				break;
-			case "Porta Aberta":
+			case "Porta Fechando":
 				setEstado("Porta Permanentemente Aberta");
 				break;
-			case "Porta Aberta":
-				setEstado("Porta Permanentemente Aberta");
-				break;
-			case "Porta Aberta":
+			case "Porta Fechada":
 				setEstado("Porta Permanentemente Aberta");
 				break;
 			}
